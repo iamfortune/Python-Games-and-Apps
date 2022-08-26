@@ -1,25 +1,17 @@
 # 🚨 Don't change the code below 👇
-student_heights = input("Input a list of student heights ").split()
-for n in range(0, len(student_heights)):
-  student_heights[n] = int(student_heights[n])
+student_scores = input("Input a list of student scores ").split()
+for n in range(0, len(student_scores)):
+  student_scores[n] = int(student_scores[n])
+print(student_scores)
 # 🚨 Don't change the code above 👆
-print(student_heights)
 
 #Write your code below this row 👇
 
-# Getting the total height of students 
-total_height = 0
-for height in student_heights:
-  total_height = total_height + height
+maximum_number = 0
+for max_number in student_scores:
+  if max_number > maximum_number:
+    maximum_number = max_number
+print(maximum_number)
 
-# Getting the number of students 
-number_of_students = 0
-for student in student_heights:
-  number_of_students = number_of_students + 1
-
-#Getting the average number of students using the int method to keep it as a whole number
-
-average_num_of_students = total_height/number_of_students
-print(int(average_num_of_students))
 
 
